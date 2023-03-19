@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NotebookController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +19,19 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/notebook', function (Request $request){
-    print_r('hello!');
-});
+/** Получение всех блокнотов */
+Route::get('notebook', [NotebookController::class,'index']);
+
+/** Добавление блокнота */
+Route::post('notebook', [NotebookController::class,'store']);
+
+/** Получение блокнота по id */
+Route::get('notebook/{id}', [NotebookController::class,'show']);
+
+/** Редактирование блокнота по id */
+Route::post('notebook/{id}', [NotebookController::class,'update']);
+
+/** Удаление блокнота по id */
+Route::delete('notebook/{id}', [NotebookController::class,'delete']);
+
+
