@@ -5,6 +5,6 @@
 
 - GET /api/v1/notebook/ - Получение всех блокнотов
 - POST /api/v1/notebook/ - Добавление блокнота
-- GET /api/v1/notebook/<id>/ - Получение блокнота по id
-- POST /api/v1/notebook/<id>/ - Редактирование блокнота по id
-- DELETE /api/v1/notebook/<id>/ - Удаление блокнота по id
+- GET /api/v1/notebook/{id}/ - Получение блокнота по id
+- POST /api/v1/notebook/{id}/ - Редактирование блокнота по id
+- DELETE /api/v1/notebook/{id}/ - Удаление блокнота по id
