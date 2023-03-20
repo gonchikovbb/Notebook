@@ -72,7 +72,7 @@
 
 ```make dev-up```
 
-2. API спецификации:
+2. Документация API:
 
 ```http://localhost:8000/api/documentation#/```
 
