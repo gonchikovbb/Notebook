@@ -23,7 +23,7 @@ class NotebookFactory extends Factory
             'last_name' => $this->faker->name,
             'third_name' => $this->faker->name,
             'company' => $this->faker->name,
-            'phone' => $this->faker->unique()->safeEmail(),
+            'phone' => $this->faker->unique()->numerify('#-###-###-####'),
             'email' => $this->faker->unique()->safeEmail(),
             'date_birth' => $this->faker->dateTimeThisMonth()->format('Y-m-d'),
             'photo_path' => Storage::disk('public')->putFile('uploads', new File($this->faker->image())),

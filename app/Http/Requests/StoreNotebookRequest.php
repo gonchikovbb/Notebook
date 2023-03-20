@@ -30,7 +30,7 @@ class StoreNotebookRequest extends FormRequest
             'last_name' => 'required|string|max:60',
             'third_name' => 'required|string|max:60',
             'company' => 'string|max:60',
-            'phone' => 'required|string|min:11|max:11|unique:notebooks',
+            'phone' => 'required|string|min:11|max:14|unique:notebooks',
             'email' => 'required|string|max:60|email|unique:notebooks',
             'date_birth' => 'date',
             'photo' => 'image|mimes:jpg,png,jpeg,gif,svg|max:2048',
