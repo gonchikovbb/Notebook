@@ -21,7 +21,7 @@ class NotebookController extends Controller
      *     path="/api/notebook/",
      *     operationId="index",
      *     tags={"Notebook"},
-     *     summary="Получение всех блокнотов",
+     *     summary="Получение всех записных книжек",
      *     description=" На одной странице отображается 5 блокнотов",
      *     @OA\Parameter(name="page", in="query", description="The page number", required=false,
      *         @OA\Schema(type="integer")
@@ -42,7 +42,7 @@ class NotebookController extends Controller
      *     path="/api/notebook/",
      *     operationId="store",
      *     tags={"Notebook"},
-     *     summary="Добавление блокнота",
+     *     summary="Добавление записной книжки",
      *     description="Store notebook in DB",
      *     @OA\RequestBody(required=true,
      *         @OA\MediaType(mediaType="multipart/form-data",
@@ -76,7 +76,7 @@ class NotebookController extends Controller
      *     path="/api/notebook/{id}",
      *     operationId="show",
      *     tags={"Notebook"},
-     *     summary="Получение блокнота по id",
+     *     summary="Получение записной книжки по id",
      *     description="",
      *     @OA\Parameter(name="id", in="path", description="Id of Notebook", required=true,
      *         @OA\Schema(type="integer")
@@ -96,7 +96,7 @@ class NotebookController extends Controller
      *     path="/api/notebook/{id}",
      *     operationId="update",
      *     tags={"Notebook"},
-     *     summary="Редактирование блокнота по id",
+     *     summary="Редактирование записной книжки по id",
      *     description="Update notebook in DB",
      *     @OA\Parameter(name="id", in="path", description="Id of Notebook", required=true,
      *         @OA\Schema(type="integer")
@@ -135,7 +135,7 @@ class NotebookController extends Controller
      *     path="/api/notebook/{id}",
      *     operationId="delete",
      *     tags={"Notebook"},
-     *     summary="Удаление блокнота по id",
+     *     summary="Удаление записной книжки по id",
      *     description="",
      *     @OA\Parameter(name="id", in="path", description="Id of Notebook", required=true,
      *         @OA\Schema(type="integer")

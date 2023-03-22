@@ -19,19 +19,19 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-/** Получение всех блокнотов */
+/** Получение всех записных книжек */
 Route::get('notebook', [NotebookController::class,'index']);
 
-/** Добавление блокнота */
+/** Добавление записной книжки */
 Route::post('notebook', [NotebookController::class,'store']);
 
-/** Получение блокнота по id */
+/** Получение записной книжки по id */
 Route::get('notebook/{id}', [NotebookController::class,'show']);
 
-/** Редактирование блокнота по id */
+/** Редактирование записной книжки по id */
 Route::post('notebook/{id}', [NotebookController::class,'update']);
 
-/** Удаление блокнота по id */
+/** Удаление записной книжки по id */
 Route::delete('notebook/{id}', [NotebookController::class,'delete']);
 
 
